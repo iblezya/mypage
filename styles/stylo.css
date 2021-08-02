@@ -1,0 +1,45 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #2A363B;
+}
+
+.grid-layout {
+  display: grid;
+  grid-template-columns: repeat(12,1fr);
+  grid-template-rows: auto 1000px;
+  gap: 0 1em;
+}
+
+.header {  
+  grid-column: 1/13;
+  grid-row: 1/2;
+  background: #E84A5F;
+  box-shadow: 0px -15px 55px 5px rgba(7, 4, 12, 0.9);
+}
+
+.header__nav{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+}
+
+.header__logo{
+  padding: 0.4em 0 0 0;
+}
+
+.header__list {
+  display: flex;
+  list-style-type: none;
+}
+
+.header__link {
+  text-decoration: none;
+  color: #2A363B;
+  padding: 0 1em;
+}
